@@ -294,7 +294,7 @@ func main() {
 		// Get the ID for button callbacks
 		id := i // Important: Create a new variable to capture the current value of i
 
-		startButton := tview.NewButton("Start").SetLabelColor("Green").SetSelectedFunc(func() {
+		startButton := tview.NewButton("Start").SetLabelColor(#00ff00).SetSelectedFunc(func() {
 			manager.StartChronometer(id)
 		})
 
