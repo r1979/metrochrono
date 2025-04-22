@@ -156,7 +156,7 @@ func main() {
 		labelInput := tview.NewInputField().
 			SetLabel("Label: ").
 			SetText(chron.displayLabel).
-			SetFieldWidth(20).
+			SetFieldWidth(80).
 			SetDoneFunc(func(key tcell.Key) {
 				// This will be set properly below
 			})
