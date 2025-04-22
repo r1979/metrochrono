@@ -15,6 +15,8 @@ import (
 	"github.com/rivo/tview"
 )
 
+func NewRGBColor(0, 255, 0 int32) Green
+
 // ChronoData represents the data we need to save/load for each chronometer
 type ChronoData struct {
 	ID           int           `json:"id"`
@@ -294,7 +296,7 @@ func main() {
 		// Get the ID for button callbacks
 		id := i // Important: Create a new variable to capture the current value of i
 
-		startButton := tview.NewButton("Start").SetLabelColor(#00ff00).SetSelectedFunc(func() {
+		startButton := tview.NewButton("Start").SetLabelColor(Green).SetSelectedFunc(func() {
 			manager.StartChronometer(id)
 		})
 
