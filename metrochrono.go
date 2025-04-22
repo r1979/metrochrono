@@ -295,11 +295,11 @@ func main() {
 		id := i // Important: Create a new variable to capture the current value of i
 
 		startButton := tview.NewButton("Start").SetSelectedFunc(func() {
-			manager.StartChronometer(id).
+			manager.StartChronometer(id)
+		}).
 			SetLabelColor(tcell.ColorGreen).               // Normal label color
 			SetLabelColorActivated(tcell.ColorWhite).      // Label color when focused/selected
 			SetBackgroundColor(tcell.ColorDarkGreen)
-		})
 
 		stopButton := tview.NewButton("Stop").SetSelectedFunc(func() {
 			manager.chronometers[id].Stop()
